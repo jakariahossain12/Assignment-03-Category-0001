@@ -1,11 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>jakaria</h1>
-</body>
+    <!-- font sora-1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ADLaM Display font-2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom style tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+
+              accent: "#FFDC26",
+              secondary: "#F9DF8A",
+              textTitle: "#111111",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- row css style -->
+    <style>
+      .sora-font {
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /* ADLaM Display font-2 */
+      .title-font {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="sora-font ">
+    <!-- ==========head start======= -->
+    <header class="min-h-screen space-y-14 mb-36">
+      <!-- ====== nav bar ======== -->
+      <nav class="w-full bg-[#FFF9F4] min-h-20">
+        <div class="navbar bg-base-100 bg-[#FFF9F4] xl:w-10/12 mx-auto">
+          <div class="navbar-start">
+            <img src="./c1-assets/logo-header.png" alt="" />
+            <a class="btn btn-ghost text-lg sm:text-2xl text-text-Title"
+              >Browse<span class="text-accent">4</span>Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-xl text-textTitle">Find a pet</a></li>
+
+              <li><a class="text-xl text-textTitle">Breeds</a></li>
+
+              <li><a class="text-xl text-textTitle">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="mr-8 space-x-2 hidden lg:blockhidden lg:block">
+              <i class="fa-solid fa-bell text-2xl"></i>
+              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            </div>
+
+            <div class="hidden lg:block">
+              <a
+                class="btn text-xl font-normal text-textTitle border border-accent bg-white hover:bg-white mr-2"
+                >Login</a
+              >
+              <a class="btn text-xl font-normal text-textTitle bg-accent"
+                >Register</a
+              >
+            </div>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ==========hero section -->
+      <div class="xl:w-10/12 mx-auto  " style="height: calc(100vh - 80px - 56px);">
+
+        <div
+          class="hero min-h-full bg-contain bg-no-repeat bg-center flex items-start"
+          style="
+            background-image: url(./c1-assets/cat-big.png);
+          "
+        >
+          
+          <div class=" pl-4  text-start">
+            <div class="max-w-lg">
+              <h1 class="mb-5 text-5xl  title-font text-textTitle">Pamper Your Pet, Because They Deserve <br> the Bes</h1>
+              <p class="mb-5 text-xl">
+                Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+              </p>
+              <button class="bg-accent text-textTitle py-2 px-4 rounded-md">Find a pet</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </header>
+    <!-- ==========head end======= -->
+
+    <!-- ==========main start======= -->
+    <main class="">
+        <!-- ========== Browse By Categories section=====-->
+         <section class="xl:w-10/12 mx-auto px-4 space-y-8">
+
+            <h2 class="sm:text-4xl text-2xl title-font text-textTitle">Browse By Categories</h2>
+
+            <div class=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+                <!-- ==== item 1 ===== -->
+                <div class="bg-secondary py-9 px-8 text-center rounded-lg">
+
+                    <div class="flex flex-col justify-center items-center space-y-2 ">
+               <div class="w-24 h-24  rounded-full bg-white flex justify-center items-center   mb-3">
+                <img src="./c1-assets/dog-cartoon.png" alt="">
+               </div>
+                <h3 class="text-xl text-text-Title title-font">Dog</h3>
+                <span class="text-sm">3 items</span>
+            </div>
+
+            </div>
+
+
+             <!-- ==== item 2 ===== -->
+             <div class="bg-secondary py-9 px-8 text-center rounded-lg">
+
+                <div class="flex flex-col justify-center items-center space-y-2 ">
+           <div class="w-24 h-24  rounded-full bg-white flex justify-center items-center   mb-3">
+            <img src="./c1-assets/dog-cartoon.png" alt="">
+           </div>
+            <h3 class="text-xl text-text-Title title-font">Dog</h3>
+            <span class="text-sm">3 items</span>
+        </div>
+
+        </div>
+
+
+         <!-- ==== item 3 ===== -->
+         <div class="bg-secondary py-9 px-8 text-center rounded-lg">
+
+            <div class="flex flex-col justify-center items-center space-y-2 ">
+       <div class="w-24 h-24  rounded-full bg-white flex justify-center items-center   mb-3">
+        <img src="./c1-assets/dog-cartoon.png" alt="">
+       </div>
+        <h3 class="text-xl text-text-Title title-font">Dog</h3>
+        <span class="text-sm">3 items</span>
+    </div>
+
+    </div>
+
+
+     <!-- ==== item 4 ===== -->
+     <div class="bg-secondary py-9 px-8 text-center rounded-lg">
+
+        <div class="flex flex-col justify-center items-center space-y-2 ">
+   <div class="w-24 h-24  rounded-full bg-white flex justify-center items-center   mb-3">
+    <img src="./c1-assets/dog-cartoon.png" alt="">
+   </div>
+    <h3 class="text-xl text-text-Title title-font">Dog</h3>
+    <span class="text-sm">3 items</span>
+</div>
+
+</div>
+
+
+
+         <!-- ==== item 5 ===== -->
+         <div class="bg-secondary py-9 px-8 text-center rounded-lg">
+
+            <div class="flex flex-col justify-center items-center space-y-2 ">
+       <div class="w-24 h-24  rounded-full bg-white flex justify-center items-center   mb-3">
+        <img src="./c1-assets/dog-cartoon.png" alt="">
+       </div>
+        <h3 class="text-xl text-text-Title title-font">Dog</h3>
+        <span class="text-sm">3 items</span>
+    </div>
+
+    </div>
+
+
+     <!-- ==== item 6 ===== -->
+     <div class="bg-secondary py-9 px-8 text-center rounded-lg">
+
+        <div class="flex flex-col justify-center items-center space-y-2 ">
+   <div class="w-24 h-24  rounded-full bg-white flex justify-center items-center   mb-3">
+    <img src="./c1-assets/dog-cartoon.png" alt="">
+   </div>
+    <h3 class="text-xl text-text-Title title-font">Dog</h3>
+    <span class="text-sm">3 items</span>
+</div>
+
+</div>
+
+
+
+            </div>
+         </section>
+
+
+
+    </main>
+    <!-- ==========main end======= -->
+
+    <!-- ==========footer start======= -->
+    <footer></footer>
+    <!-- ==========footer start======= -->
+  </body>
 </html>
