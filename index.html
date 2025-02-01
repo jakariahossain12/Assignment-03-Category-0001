@@ -69,6 +69,10 @@
         font-weight: 400;
         font-style: normal;
       }
+
+      html{
+          scrollbar-width: none;
+        }
     </style>
   </head>
   <body class="sora-font ">
@@ -133,7 +137,7 @@
       <div class="xl:w-10/12 mx-auto  " style="height: calc(100vh - 80px - 56px);">
 
         <div
-          class="hero min-h-full bg-contain bg-no-repeat bg-center flex items-start"
+          class="hero min-h-full bg-contain bg-no-repeat bg-right-bottom flex items-start"
           style="
             background-image: url(./c1-assets/cat-big.png);
           "
@@ -254,9 +258,9 @@
          </section>
 
          <!-- ===== trending pet products section-2 =====-->
-          <section class=" bg-[#FFF9F4] mb-28 ">
+          <section class=" bg-[#FFF9F4] mb-11 sm:mb-28 ">
             <!-- container -->
-             <div class="xl:w-10/12 mx-auto px-4 space-y-8 sm:py-32 py-16">
+             <div class="xl:w-10/12 mx-auto px-4 space-y-8 sm:py-28 py-16">
               <h2 class="sm:text-4xl text-2xl title-font text-textTitle">Trending Pet Products</h2>
               <!--  --trending item card container-->
                 <div class="grid grid-cols-2 sm:grid-cols-5 gap-6">
@@ -440,12 +444,140 @@
           </section>
 
 
+          <!-- ====== Everyday low Price section ====== -->
+           <section class="sm:mb-96 mb-[500px]">
+
+            <!-- ===== container -->
+
+            <div class="xl:w-10/12 mx-auto px-4 space-y-8 ">
+              <h2 class="sm:text-4xl text-2xl title-font text-textTitle">Everyday low Price</h2>
+
+              <!-- item container -->
+               <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                
+                  <!-- ==== item 1 ==== -->
+                  <div class=" rounded-lg bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]    sm:col-span-2 row-span-2 flex sm:flex-row   flex-col  sm:items-center sm:justify-between" >
+
+
+                    <div class="sm:pt-12 sm:pl-9 pl-8 pt-6  space-y-3">
+                      <span class="text-lg sm:block hidden">Under Price</span>
+                    <h3 class="sm:text-3xl text-lg title-font text-textTitle">Pet Grooming Mitt</h3>
+                    <p class="sm:block hidden  sm:text-2xl text-xs text-white">(Easy Hair Removal)</p>
+
+                    <span class="sm:text-5xl text-3xl font-extrabold inline-block text-[#000000]">$7.99</span>
+                  </div>
+
+                  <div>
+                    <img class="w-full sm:pl-0 pl-24" src="./c1-assets/cute-dog-mid.png" alt="">
+                  </div>
+
+                 
+                   </div>
+
+
+                    <!-- ==== item 2 ==== -->
+                    <div class=" rounded-lg bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]    row-span-2 flex flex-col  justify-center px-8" >
+
+
+                      <div class="pt-9 space-y-2">
+                      <h3 class="sm:text-2xl text-lg title-font text-textTitle">T-Shirt for Dogs</h3>
+  
+                      <span class="text-3xl font-extrabold inline-block text-accent">$7.99</span>
+                    </div>
+  
+                    <div>
+                      <img class="pl-14 w-full" src="./c1-assets/cute-pet-small.png" alt="">
+                    </div>
+                    
+                     </div>
+
+
+
+
+               </div>
+
+            </div>
+
+
+
+           </section>
+
+
+
 
     </main>
     <!-- ==========main end======= -->
 
     <!-- ==========footer start======= -->
-    <footer></footer>
+   
+    <footer class=" bg-[#FFDC26] relative px-4 ">
+
+      <!-- ==== footer head======= -->
+       <div class=" xl:w-10/12 mx-auto  bg-[#FFF9F4]  flex flex-col sm:flex-row items-center right-4 left-4   sm:items-center sm:justify-evenly py-10  rounded-xl absolute -mt-[450px] sm:-mt-64  sm:transform sm:left-1/2 sm:-translate-x-1/2">
+        <!-- ======== img ======-->
+         <div>
+          <img class="w-full" src="./c1-assets/cute-pet-mid.png" alt="">
+         </div>
+
+         <!-- ========== text content===== -->
+          <div class="space-y-6 text-center sm:text-start">
+            <span class="text-4xl tect-textTitle title-font">Get Pawsome News!</span>
+            <p class="text-xl text-textTitle">Exclusive training tips, ticks, product deals and more.</p>
+            <input type="email" placeholder="Enter email...." class="input  w-full max-w-xs" /><br>
+            <button class="bg-accent text-textTitle py-2 px-4 rounded-md">Subscribe</button>
+
+          </div>
+
+       </div>
+
+
+      <!-- ==== footer container=== -->
+       <div class="xl:w-10/12 mx-auto px-4 space-y-8 flex sm:flex-row flex-col justify-between sm:items-center pb-32 pt-72">
+        <!-- ===== content===== -->
+
+        <!-- ==== item 1===== -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row  items-center gap-4">
+            <img src="./c1-assets/logo-footer.png" alt="">
+            <span class="text-2xl text-textTitle">Browse4Pets</span>
+          </div>
+
+          <p class="text-xl text-[rgba(17, 17, 17, 0.7)]">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+
+        </div>
+
+
+        <!-- ==== item 2 ===== -->
+         <ul class=" flex flex-col gap-9">
+          <li><a class="text-xl text-textTitle" href="">Find a pet</a></li>
+          <li><a class="text-xl text-textTitle" href="">Breeds</a></li>
+          <li><a class="text-xl text-textTitle" href="">Contact us</a></li>
+         </ul>
+
+          <!-- ==== item 3 ===== -->
+           <div class="flex flex-col space-y-3 sm:items-center sm:pt-24">
+            <p class="text-base font-medium text-textTitle">Follow Us</p>
+
+
+
+            <div class="space-x-4 sm:ml-11">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+
+           </div>
+
+
+
+
+
+       </div>
+    </footer>
     <!-- ==========footer start======= -->
+
+   
+    
   </body>
 </html>
